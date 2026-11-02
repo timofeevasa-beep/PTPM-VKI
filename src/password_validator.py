@@ -1,3 +1,4 @@
+# hello
 def validate_password(password: str) -> bool:
 
     if not isinstance(password, str):
