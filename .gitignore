@@ -1,0 +1,11 @@
+#IDEA
+.idea/
+*.iml
+
+# Coverage
+.coverage
+htmlcov/
+
+# Кэшшшшш
+**/__pycache__/
+*.pyc
