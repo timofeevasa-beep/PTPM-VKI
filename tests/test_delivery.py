@@ -54,5 +54,10 @@ class TestDeliveryService(unittest.TestCase):
         self.assertEqual(cost, 1050)
         self.assertEqual(date, "2026-09-04")
 
+    def test_express_dangerous(self):
+        cost, date = calculate_delivery_cost(5.0, 100, "опасный")
+        self.assertEqual(cost, 1840)
+        self.assertEqual(date, "2026-09-04")
+
 if __name__ == '__main__':
     unittest.main()
